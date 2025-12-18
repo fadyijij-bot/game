@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سباق الكتابة السريع</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🏎️ سباق الكتابة السريع 🏎️</h1>
+        
+        <div class="track">
+            <div id="car" class="car">🏎️</div>
+            <div class="finish">🏁</div>
+        </div>
+
+        <div id="target-text">جاري تحميل الجملة...</div>
+        
+        <input type="text" id="input-box" placeholder="اكتب هنا بأسرع ما عندك..." autocomplete="off">
+        
+        <div class="info">
+            التقدم: <span id="progress">0</span>%
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

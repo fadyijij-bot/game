@@ -1,0 +1,57 @@
+body {
+    background: #1a1a2e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    width: 80%;
+    text-align: center;
+    background: #16213e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.track {
+    background: #0f3460;
+    height: 60px;
+    margin: 30px 0;
+    position: relative;
+    border-radius: 10px;
+    border-bottom: 4px dashed white;
+}
+
+.car {
+    position: absolute;
+    left: 0;
+    font-size: 35px;
+    transition: left 0.3s ease;
+}
+
+.finish {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+}
+
+#target-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e94560;
+    font-weight: bold;
+}
+
+#input-box {
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
